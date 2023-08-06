@@ -1,8 +1,6 @@
 pipeline {
     // run on jenkins nodes tha has slave label .....
-    agent {
-        label 'maven' 
-    }
+    agent any
     stages {  
         stage('Build') {
             steps {
